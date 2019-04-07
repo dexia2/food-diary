@@ -1,9 +1,9 @@
-import Hello from './components/hello';
+import App from './components/App';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 ReactDOM.render(
-  <Hello />,
+  <App />,
   document.querySelector('.main')
 );
 
