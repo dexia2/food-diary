@@ -5,6 +5,9 @@ const GlobalStyle = createGlobalStyle`
   body {
     box-sizing: border-box;
     font-size: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    line-height: 1;
   }
 
   *,
