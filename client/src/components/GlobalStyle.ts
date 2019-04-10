@@ -1,13 +1,17 @@
 
 import { createGlobalStyle } from 'styled-components'
+import Color from './constants/Color';
+import Typography from './constants/Typography';
 
 const GlobalStyle = createGlobalStyle`
   body {
     box-sizing: border-box;
     font-size: 10px;
     font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 400;
+    font-weight: ${Typography.NormalBold};
     line-height: 1;
+    letter-spacing: 0.05em;
+    color: ${Color.Text}
   }
 
   *,
