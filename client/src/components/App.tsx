@@ -1,6 +1,6 @@
 import React from 'react';
 import GlobalStyle from './GlobalStyle';
-import Icon from './atoms/Icon';
+import Icon from './molecules/Icon';
 
 function App () {
   return (

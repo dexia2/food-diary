@@ -1,27 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
-import Loading from './Loading';
+import IconStyle from '../atoms/IconStyle';
+import Loading from '../atoms/Loading';
 
 const DefaultWidth = 24;
 const DefaultColor = '#848d95';
-
-type IconStyleProps = {
-  width: number;
-  color: string;
-};
-
-const IconStyle = styled.i`
-  display: inline;
-  svg {
-    width: ${(props: IconStyleProps) => props.width }px !important;
-    height: ${(props: IconStyleProps) => props.width }px !important;
-    display: inline-block;
-    background-size: 100%;
-    path {
-      fill: ${(props: IconStyleProps) => props.color } !important;
-    }
-  }
-`;
 
 type IconProps = {
   name: string;
