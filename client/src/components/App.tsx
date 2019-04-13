@@ -1,12 +1,12 @@
 import React from 'react';
 import GlobalStyle from './GlobalStyle';
-import Icon from './molecules/Icon';
+import IconWithLoading from './molecules/IconWithLoading';
 
 function App () {
   return (
     <React.Fragment>
       <GlobalStyle/>
-      <Icon name="night" />
+      <IconWithLoading name="night" />
       <h1>Hello, Styled Component!!</h1>
     </React.Fragment>
   );

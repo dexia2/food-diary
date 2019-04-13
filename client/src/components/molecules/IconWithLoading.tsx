@@ -5,13 +5,13 @@ import Loading from '../atoms/Loading';
 const DefaultWidth = 24;
 const DefaultColor = '#848d95';
 
-type IconProps = {
+type IconWithLoadingProps = {
   name: string;
   width?: number;
   color?: string;
 };
 
-function Icon({name, width = DefaultWidth, color = DefaultColor}: IconProps) {
+function IconWithLoading({name, width = DefaultWidth, color = DefaultColor}: IconWithLoadingProps) {
   const [svg, setSvg] = useState('');
   const [loading, setLoading] = useState(true);
 
@@ -44,4 +44,4 @@ function Icon({name, width = DefaultWidth, color = DefaultColor}: IconProps) {
 
 }
 
-export default Icon;
+export default IconWithLoading;
