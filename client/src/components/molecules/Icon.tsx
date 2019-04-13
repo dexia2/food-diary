@@ -11,11 +11,11 @@ type IconProps = {
   color?: string;
 };
 
-function Icon(props: IconProps) {
+function Icon({name, width = DefaultWidth, color = DefaultColor}: IconProps) {
   const [svg, setSvg] = useState('');
   const [loading, setLoading] = useState(true);
 
-  const url = `./assets/images/${props.name}.svg`;
+  const url = `./assets/images/${name}.svg`;
   useEffect(() => {
     fetch(url)
       .then(res => {
@@ -31,12 +31,10 @@ function Icon(props: IconProps) {
       });
   });
 
-  const width = props.width || DefaultWidth;
   if (loading) {
     return <Loading width={width}/>;
   }
 
-  const color = props.color || DefaultColor;
   return (
     <IconStyle 
       width={width} 
