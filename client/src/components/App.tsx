@@ -1,13 +1,12 @@
 import React from 'react';
 import GlobalStyle from './GlobalStyle';
-import IconWithLoading from './molecules/IconWithLoading';
+import Navigation from './molecules/Navigation';
 
 function App () {
   return (
     <React.Fragment>
       <GlobalStyle/>
-      <IconWithLoading name="night" />
-      <h1>Hello, Styled Component!!</h1>
+      <Navigation></Navigation>
     </React.Fragment>
   );
 }
